@@ -33,7 +33,8 @@ class SerialGenerator:
         """Resets counter back to 0. Subsequent generated serial numbers should start at starter value"""
         self.counter = 0
 
-    
+    def __repr__(self):
+        return f'<SerialGenerator: start = {self.start}, next= {self.start + self.counter}'
     
     
     
